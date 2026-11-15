@@ -1,0 +1,23 @@
+# BUG-001: Chat returns fake cart contents when the cart is empty
+
+- **Severity:** Major
+- **Priority:** High
+- **Environment:** [browser, OS, date]
+- **Related test case:** TC-04
+
+## Steps to Reproduce
+1. Open the Sweet Shop website and make sure the cart is empty
+2. Click the chat icon in the bottom-right corner
+3. Type: "Check my cart"
+
+## Expected Result
+The chat says the cart is empty, or that it has no access to the cart.
+
+## Actual Result
+The chat returns non-existent cart contents: [paste exactly what the chat wrote].
+
+## Evidence
+![screenshot](../evidence/TC-04.png)
+
+## Notes
+Hallucination: a user may mistake the made-up items and total for a real order.
